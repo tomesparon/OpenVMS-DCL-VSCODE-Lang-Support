@@ -21,6 +21,7 @@ Early Release version
 
 Initial release
 
+![Example DCL](https://github.com/tomesparon/OpenVMS-DCL-VSCODE-Lang-Support/blob/master/images/code.png)
 -----------------------------------------------------------------------------------------------------------
 
 ### For more information on the original tmLanguage file:
