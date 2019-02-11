@@ -21,6 +21,10 @@ Early Release version
 
 Initial release
 
+### 0.0.2
+
+Update README
+
 ![Example DCL](https://github.com/tomesparon/OpenVMS-DCL-VSCODE-Lang-Support/blob/master/images/code.png)
 -----------------------------------------------------------------------------------------------------------
 
