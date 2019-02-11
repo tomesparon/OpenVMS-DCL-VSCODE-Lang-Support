@@ -2,7 +2,7 @@
     "name": "openvms-syntax",
     "displayName": "OpenVMS_DCL",
     "description": "Digital Command Language syntax support for VS Code based on gnikonorov/OpenVMS-DCL-Sublime-Lang-Support",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "tomesparon",
     "icon": "images/dcl.png",
     "engines": {
