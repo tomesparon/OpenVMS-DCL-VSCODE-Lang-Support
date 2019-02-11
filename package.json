@@ -1,0 +1,25 @@
+{
+    "name": "dcl",
+    "displayName": "OpenVMS_DCL",
+    "description": "Digital Command Language syntax support for VS Code based on gnikonorov/OpenVMS-DCL-Sublime-Lang-Support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dcl",
+            "aliases": ["DIGITAL Command Language (DCL)", "dcl"],
+            "extensions": [".com"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dcl",
+            "scopeName": "source.dcl",
+            "path": "./syntaxes/openvms_dcl.tmLanguage"
+        }]
+    }
+}
