@@ -6,10 +6,14 @@ This extension is for DCL batch scripts. These are typically ran on OpenVMS syst
 - .COM / DCL file syntax highlighting
 - Autocomplete for common lexicals and commands
 - Helpful snippets: 
--- 'fill10'  : Fill below lines with $ signs
--- 'bindsay' : Shortcut for console.log equivelant
--- 'if '     : Generate an if-then-endif statement block
--- 'ifelse'  : Genetate an if-then-else-endif statement block
+
+  
+Snippet Shortcut      | Purpose
+--------------------- | -------------
+'fill10'              | Fill below lines with $ signs
+'bindsay'             | Shortcut for console.log equivelant
+'if '                 | Generate an if-then-endif statement block
+'ifelse'              | Genetate an if-then-else-endif statement block
 
 ## Requirements
 
