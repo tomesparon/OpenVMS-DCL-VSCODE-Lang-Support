@@ -1,4 +1,15 @@
 .vscode/**
 .vscode-test/**
+**/*.ts
+**/*.map
 .gitignore
+**/tsconfig.json
+**/tsconfig.base.json
+contributing.md
 vsc-extension-quickstart.md
+.travis.yml
+client/node_modules/**
+!client/node_modules/vscode-jsonrpc/**
+!client/node_modules/vscode-languageclient/**
+!client/node_modules/vscode-languageserver-protocol/**
+!client/node_modules/vscode-languageserver-types/**

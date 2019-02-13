@@ -1,13 +1,19 @@
 
-This will add syntax highlighting to DCL batch scripts. These are typically ran on OpenVMS systems, and are similar to BASH scripts
+This extension is for DCL batch scripts. These are typically ran on OpenVMS systems, and are similar to BASH scripts
 
 ## Features
 
 - .COM / DCL file syntax highlighting
+- Autocomplete for common lexicals and commands
+- Helpful snippets: 
+-- 'fill10'  : Fill below lines with $ signs
+-- 'bindsay' : Shortcut for console.log equivelant
+-- 'if '     : Generate an if-then-endif statement block
+-- 'ifelse'  : Genetate an if-then-else-endif statement block
 
 ## Requirements
 
-None
+None / Built-in vscode features
 
 ## Extension Settings
 
@@ -24,6 +30,10 @@ Initial release
 ### 0.0.3
 
 Update README
+
+### 0.1.0
+
+Added autocomplete for most lexicals and commands, and some snippets.
 
 
 <p align="center">

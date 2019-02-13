@@ -1,0 +1,11 @@
+{
+	"name": "lsp-dcl-server",
+	"description": "language server in node.",
+	"engines": {
+		"node": "*"
+	},
+	"dependencies": {
+		"vscode-languageserver": "^4.1.3"
+	},
+	"scripts": {}
+}

@@ -1,24 +1,46 @@
 {
-    "name": "openvms-syntax",
+	"name": "openvms-syntax",
     "displayName": "OpenVMS_DCL",
     "description": "Digital Command Language syntax support for VS Code based on gnikonorov/OpenVMS-DCL-Sublime-Lang-Support",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "tomesparon",
     "icon": "images/dcl.png",
-    "engines": {
-        "vscode": "^1.31.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "keywords":["dcl","openvms","vms"],
     "repository": {
 		"type": "git",
 		"url": "https://github.com/tomesparon/OpenVMS-DCL-VSCODE-Lang-Support.git"
     },
-    "homepage": "https://github.com/tomesparon/OpenVMS-DCL-VSCODE-Lang-Support/README.md",
-    "contributes": {
-        "languages": [{
+
+	"categories": ["Programming Languages"],
+    "keywords":["dcl","openvms","vms"],
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"homepage": "https://github.com/tomesparon/OpenVMS-DCL-VSCODE-Lang-Support/README.md",
+
+	"activationEvents": [
+		"onLanguage:dcl"
+	],
+	"main": "./client/out/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Configuration",
+			"properties": {
+				"languageServer.trace.server": {
+					"scope": "window",
+					"type": "string",
+					"enum": [
+						"off",
+						"messages",
+						"verbose"
+					],
+					"default": "off",
+					"description": "Traces the communication between VS Code and the language server."
+				}
+			}
+		},
+		
+		"languages": [{
             "id": "dcl",
             "aliases": ["DIGITAL Command Language (DCL)", "dcl"],
             "extensions": [".com"],
@@ -28,6 +50,25 @@
             "language": "dcl",
             "scopeName": "source.dcl",
             "path": "./syntaxes/openvms_dcl.tmLanguage"
-        }]
-    }
+		}],
+		"snippets": [
+			{
+				"language": "dcl",
+				"path": "./dcl-snippets.json"
+			}
+		]
+
+	},
+	"scripts": {
+		"vscode:prepublish": "cd client && npm run update-vscode && cd .. && npm run compile",
+		"compile": "tsc -b",
+		"watch": "tsc -b -w",
+		"postinstall": "cd client && npm install && cd ../server && npm install && cd .."
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.0",
+		"@types/node": "^8.0.0",
+		"tslint": "^5.11.0",
+		"typescript": "^3.1.3"
+	}
 }
