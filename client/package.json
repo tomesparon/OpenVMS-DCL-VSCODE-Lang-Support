@@ -1,18 +1,15 @@
 {
 	"name": "lsp-dcl-client",
 	"description": "language server",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
-		"vscode": "^1.23.0"
+		"vscode": "^1.67.0"
 	},
-	"scripts": {
-		"update-vscode": "vscode-install",
-		"postinstall": "vscode-install"
-	},
+	
 	"dependencies": {
-		"vscode-languageclient": "^4.1.4"
+		"vscode-languageclient": "^8.0.2"
 	},
 	"devDependencies": {
-		"vscode": "^1.1.21"
+		"@types/vscode": "^1.67.0"
 	}
 }
