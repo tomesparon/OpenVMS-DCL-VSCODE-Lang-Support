@@ -39,6 +39,9 @@ Update README
 
 Added autocomplete for most lexicals and commands, and some snippets.
 
+### 0.1.2
+
+Update for recent vscode versions
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/tomesparon/OpenVMS-DCL-VSCODE-Lang-Support/master/images/code.png">
