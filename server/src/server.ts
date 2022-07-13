@@ -236,7 +236,7 @@ connection.onCompletion(
 				data: 12
 			},
 			{
-				label: 'f$extact',
+				label: 'f$extract',
 				kind: CompletionItemKind.Text,
 				data: 13
 			},
