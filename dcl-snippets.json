@@ -2,46 +2,46 @@
 	"Fill 10 lines with $": {
 		"prefix": "fill10",
 		"body": [
-			"$ $0",
-			"$ ",
-			"$ ",
-			"$ ",
-			"$ ",
-			"$ ",
-			"$ ",
-			"$ ",
-			"$ ",
-			"$ ",
-			"$ "
+			"\\$ $0",
+			"\\$ ",
+			"\\$ ",
+			"\\$ ",
+			"\\$ ",
+			"\\$ ",
+			"\\$ ",
+			"\\$ ",
+			"\\$ ",
+			"\\$ ",
+			"\\$ "
 		],
 		"description": "Fill 10 lines with $"
 	},
 	"Generate if statement": {
 		"prefix": "if ",
 		"body": [
-			"$ if $1",
-			"$ then",
-			"$     $2",
-			"$ endif"
+			"\\$ if $1",
+			"\\$ then",
+			"\\$     $0",
+			"\\$ endif"
 		],
 		"description": "Generate if structure"
 	},
 	"Generate if-else statement": {
 		"prefix": "ifelse ",
 		"body": [
-			"$ if $1",
-			"$ then",
-			"$     $2",
-			"$ else",
-			"$     $3",
-			"$ endif"
+			"\\$ if $1",
+			"\\$ then",
+			"\\$     $2",
+			"\\$ else",
+			"\\$     $0",
+			"\\$ endif"
 		],
 		"description": "Generate if-else structure"
 	},
-	"Bind say to SYS$OUPUT": {
+	"Bind say to WRITE SYS$OUPUT": {
 		"prefix": "bindsay ",
 		"body": [
-			"$ say :== sys$output"
+			"\\$ say :== write sys\\$output"
 		],
 		"description": "Shortcut for a console.log equivelant"
 	}

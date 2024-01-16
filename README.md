@@ -43,6 +43,10 @@ Added autocomplete for most lexicals and commands, and some snippets.
 
 Update for recent vscode versions
 
+### 0.1.3
+
+Update for security vulnerabilities in used NPM packages.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/tomesparon/OpenVMS-DCL-VSCODE-Lang-Support/master/images/code.png">
 </p>
